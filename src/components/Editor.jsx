@@ -12,7 +12,8 @@ const Editor = ({lang, value, mode, onChange}) => {
     localStorage.setItem(lang, value);
   }
   useEffect(()=>{
-      onChange(localStorage.getItem(lang));
+
+      onChange(localStorage.getItem(lang)?localStorage.getItem(lang):'');
     },[])
   return (
     <div className="editor">
