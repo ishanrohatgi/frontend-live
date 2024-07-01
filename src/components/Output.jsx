@@ -9,7 +9,7 @@ const Output = ({html, css, javascript}) => {
       setSrcVal(`<html>
       <style>${css}</style>
       <body>${html}</body>
-      <script>${javascript}</script>
+      <script defer>${javascript}</script>
       </html>`)
     },1000)
 
